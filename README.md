@@ -16,7 +16,7 @@ Project coordinates: groupId, artifactId, version
 Dependencies: Libraries your project needs
 Plugins: For various tasks in the build lifecycle
 Sample pom.xml:
-        ```xml
+```
         
         <project>
             <modelVersion>4.0.0</modelVersion>
@@ -28,7 +28,7 @@ Sample pom.xml:
             </dependencies>
         </project>
         
-        ```
+```
 
 2. Dependency Management
 Maven handles dependencies automatically by fetching them from configured repositories.
@@ -36,7 +36,7 @@ Maven handles dependencies automatically by fetching them from configured reposi
 Adding a Dependency:
 
         
-        ```xml
+```
         
         <dependency>
             <groupId>junit</groupId>
@@ -50,7 +50,7 @@ Adding a Dependency:
             <version>3.4.0</version>
         </dependency>
         
-        ```
+```
         
 3. Repositories
 Local Repository: ~/.m2/repository
@@ -91,7 +91,7 @@ maven-surefire-plugin: Configures testing.
 maven-jar-plugin: Creates JAR files.
 Example Plugin:
 
-    ```xml
+```
     
     <build>
         <plugins>
@@ -107,14 +107,14 @@ Example Plugin:
         </plugins>
     </build>
     
-    ```
+```
     
 🛠️ Maven Profiles
 Profiles in Maven allow configuration of build settings for different environments (like dev or prod).
 
 Example Profile:
 
- ```xml
+ ```
     
     <profiles>
         <profile>
@@ -131,7 +131,7 @@ Example Profile:
         </profile>
     </profiles>
     
- ```
+```
 
 Activate with:
 
@@ -157,13 +157,13 @@ Example Dockerfile:
 
 dockerfile
         
-        ```
+```
         
         FROM maven:3.8.4-jdk-11
         WORKDIR /app
         COPY . .
         RUN mvn clean package
-        ```
+ ```
 RUN mvn clean package
 Best Practices for Maven in DevOps
 Centralize Dependency Management: Avoid dependency conflicts by managing them in pom.xml.
