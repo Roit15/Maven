@@ -1,4 +1,4 @@
-📘 Maven for DevOps: From Basics to Advanced
+### 1. 📘 Maven for DevOps: From Basics to Advanced
 Welcome! This guide will help you understand the fundamentals and advanced features of Apache Maven—a versatile build automation tool widely used in DevOps workflows. Let’s dive in!
 
 🚀 Introduction to Maven
